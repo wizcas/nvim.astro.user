@@ -19,10 +19,10 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  -- colorscheme = "night-owl",
+  colorscheme = "night-owl",
   -- colorscheme = "catppuccin",
   -- colorscheme = "nightfox",
-  colorscheme = "tokyonight-moon",
+  -- colorscheme = "tokyonight-moon",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -88,7 +88,7 @@ return {
     vim.filetype.add {
       extension = {
         mdx = "markdown",
-      }
+      },
     }
   end,
 }
