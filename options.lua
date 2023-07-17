@@ -1,4 +1,5 @@
 -- set vim options here (vim.<first_key>.<second_key> = value)
+
 return {
   opt = {
     -- set to true or false etc.
@@ -20,6 +21,9 @@ return {
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
     copilot_no_tab_map = true, -- disable mapping Tab to accept GitHub Copilot suggestions
+    copilot_filetypes = {
+      markdown = true,
+    },
   },
 }
 -- If you need more control, you can use the function()...end notation

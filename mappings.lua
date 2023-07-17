@@ -15,6 +15,7 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>be"] = { "<cmd>e!<cr>", desc = "Revert buffer changes" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
@@ -35,6 +36,7 @@ return {
   },
   i = {
     ["<leader>,"] = {'copilot#Accept("")', desc="Copilot accept", expr = true, silent = true, noremap = true, replace_keycodes = false},
+    ["<leader>，"] = {'copilot#Accept("")', desc="Copilot accept", expr = true, silent = true, noremap = true, replace_keycodes = false},
   },
   t = {
     -- setting a mapping to false will disable it
