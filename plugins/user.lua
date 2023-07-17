@@ -9,4 +9,13 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+    {
+      "oxfist/night-owl.nvim",
+      name = "night-owl",
+      lazy = false,
+      priority = 1000,
+      config = function()
+        vim.cmd.colorscheme("night-owl")
+      end
+    }
 }
