@@ -31,6 +31,7 @@ return {
       desc = "Home screen",
     },
     ["<leader>h"] = {":noh", desc="noh"},
+    ["<leader>fp"] = {":Telescope projects<CR>", desc="Open projects"},
   },
   i = {
     ["<leader>,"] = {'copilot#Accept("")', desc="Copilot accept", expr = true, silent = true, noremap = true, replace_keycodes = false},
