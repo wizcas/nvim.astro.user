@@ -17,5 +17,11 @@ return {
       config = function()
         vim.cmd.colorscheme("night-owl")
       end
-    }
+    },
+    {
+      "github/copilot.vim",
+      lazy =false,
+      autoStart = true,
+      event = "InsertEnter",
+    },
 }

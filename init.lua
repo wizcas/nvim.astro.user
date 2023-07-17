@@ -19,7 +19,7 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  colorschme = "night-owl",
+  colorscheme = "night-owl",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
