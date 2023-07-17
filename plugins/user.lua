@@ -1,3 +1,5 @@
+local utils = require "astronvim.utils"
+
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
@@ -14,14 +16,20 @@ return {
     name = "night-owl",
     lazy = false,
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme("night-owl")
-    end
   },
   {
     "github/copilot.vim",
-    lazy =false,
+    lazy = false,
     autoStart = true,
     event = "InsertEnter",
+  },
+  -- for better markdown support
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "marksman") end,
+  },
+  {
+    "jay-babu/mason-null-ls.nvim",
+    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "prettier") end,
   },
 }
