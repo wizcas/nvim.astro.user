@@ -93,5 +93,12 @@ return {
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#011F38" })
     vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#011F38" })
     vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#011F38" })
+
+    -- user commands
+    vim.api.nvim_create_user_command(
+      "CDHere",
+      "cd %:p:h",
+      { nargs = 0, desc = "Change pwd to the current buffer's directory" }
+    )
   end,
 }
