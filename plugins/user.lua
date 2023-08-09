@@ -32,4 +32,10 @@ return {
     "jay-babu/mason-null-ls.nvim",
     opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "prettier") end,
   },
+  {
+    "ruifm/gitlinker.nvim",
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function() require("gitlinker").setup() end,
+  },
 }

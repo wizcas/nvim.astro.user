@@ -11,11 +11,14 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
     ["<leader>be"] = { "<cmd>e!<cr>", desc = "Revert buffer changes" },
+    ["<leader>bh"] = { "<cmd>CDHere<cr>", desc = "CD to the buffer's directory" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
@@ -31,12 +34,25 @@ return {
       end,
       desc = "Home screen",
     },
-    ["<leader>h"] = {":noh", desc="noh"},
-    ["<leader>fp"] = {":Telescope projects<CR>", desc="Open projects"},
+    ["<leader>h"] = { ":noh", desc = "noh" },
   },
   i = {
-    ["<leader>,"] = {'copilot#Accept("")', desc="Copilot accept", expr = true, silent = true, noremap = true, replace_keycodes = false},
-    ["<leader>，"] = {'copilot#Accept("")', desc="Copilot accept", expr = true, silent = true, noremap = true, replace_keycodes = false},
+    ["<leader>,"] = {
+      'copilot#Accept("")',
+      desc = "Copilot accept",
+      expr = true,
+      silent = true,
+      noremap = true,
+      replace_keycodes = false,
+    },
+    ["<leader>，"] = {
+      'copilot#Accept("")',
+      desc = "Copilot accept",
+      expr = true,
+      silent = true,
+      noremap = true,
+      replace_keycodes = false,
+    },
   },
   t = {
     -- setting a mapping to false will disable it
