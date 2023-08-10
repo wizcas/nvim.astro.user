@@ -15,7 +15,7 @@ local options = {
     undofile = true, -- enable persistent undo
     updatetime = 300, -- faster completion (4000ms default)
     autoread = true, -- automatically reload changed files
-    guifont = "CaskaydiaCove Nerd Font,CaskaydiaCove NF,FantasqueSansM Nerd Font,Fira Code Nerd Font,Fira Code NF:h16", -- fonts for GUI clients
+    guifont = "CaskaydiaCove Nerd Font,FantasqueSansM Nerd Font,Fira Code Nerd Font,Fira Code NF:h16", -- fonts for GUI clients
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -32,6 +32,8 @@ local options = {
     },
   },
 }
+
+local guifont4nvy = "CaskaydiaCove Nerd Font:h16"
 
 -- If you need more control, you can use the function()...end notation
 return function(local_vim)
@@ -52,6 +54,11 @@ return function(local_vim)
     for k, v in pairs(neovide_opts) do
       vim.g[k] = v
     end
+  end
+
+  if vim.g.nvy then
+    print "Hello, Nvy!"
+    local_vim.opt.guifont = guifont4nvy
   end
 
   return local_vim

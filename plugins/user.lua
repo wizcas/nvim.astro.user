@@ -1,16 +1,7 @@
 local utils = require "astronvim.utils"
 
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  -- THEMES! YAY!
   {
     "oxfist/night-owl.nvim",
     name = "night-owl",
@@ -26,6 +17,7 @@ return {
     name = "catppuccin",
     priority = 1000,
   },
+  -- Functional
   {
     "github/copilot.vim",
     lazy = false,
