@@ -100,5 +100,13 @@ return {
       "cd %:p:h",
       { nargs = 0, desc = "Change pwd to the current buffer's directory" }
     )
+    -- lsp configs
+    local ok, lspconfig = pcall(require, "lspconfig")
+    if ok then
+      local configPath = vim.fn.stdpath "config"
+      lspconfig.powershell_es.setup {
+        bundle_path = configPath .. "/lspinstall/powershell_es",
+      }
+    end
   end,
 }
