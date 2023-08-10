@@ -14,7 +14,16 @@ return {
   {
     "oxfist/night-owl.nvim",
     name = "night-owl",
-    lazy = false,
+    priority = 1000,
+  },
+  {
+    "folke/tokyonight.nvim",
+    name = "tokyonight",
+    priority = 1000,
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
   },
   {

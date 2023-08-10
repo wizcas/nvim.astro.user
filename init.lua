@@ -19,7 +19,8 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  colorscheme = "night-owl",
+  -- colorscheme = "night-owl",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -87,12 +88,6 @@ return {
         mdx = "markdown",
       },
     }
-
-    -- adjust the float window color for theme Night Owl
-    vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#011F38", fg = "#5E81AC" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#011F38" })
-    vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#011F38" })
-    vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#011F38" })
 
     -- user commands
     vim.api.nvim_create_user_command(

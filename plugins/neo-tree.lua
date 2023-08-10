@@ -1,11 +1,19 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = function(_, config)
-    local mappings = config.window.mappings
+    local window = config.window
+
     -- the fuzzy finder works very slow and always crash when
     -- the number of files is too large. Thus I disable it.
-    mappings["/"] = "noop"
-    mappings["g/"] = "fuzzy_finder"
+    window.mappings["/"] = "noop"
+    window.mappings["g/"] = "fuzzy_finder"
+
+    -- show the hidden files but with different visual style
+    window.filesystem = {
+      filtered_items = {
+        visible = true,
+      },
+    }
 
     return config
   end,
