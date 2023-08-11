@@ -7,6 +7,7 @@ return {
     -- the number of files is too large. Thus I disable it.
     window.mappings["/"] = "noop"
     window.mappings["g/"] = "fuzzy_finder"
+    window.mappings["b"] = "navigate_up"
 
     local filesystem = config.filesystem
     -- use fd for faster fuzzy finding
