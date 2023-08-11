@@ -8,10 +8,15 @@ return {
     window.mappings["/"] = "noop"
     window.mappings["g/"] = "fuzzy_finder"
 
-    -- show the hidden files but with different visual style
-    window.filesystem = {
-      filtered_items = {
-        visible = true,
+    local filesystem = config.filesystem
+    -- use fd for faster fuzzy finding
+    filesystem.find_command = "fd"
+    filesystem.find_args = {
+      fd = {
+        "--exclude",
+        ".git",
+        "--exclude",
+        "node_modules",
       },
     }
 
