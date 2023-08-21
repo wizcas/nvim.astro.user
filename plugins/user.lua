@@ -24,15 +24,6 @@ return {
     autoStart = true,
     event = "InsertEnter",
   },
-  -- for better markdown support
-  {
-    "williamboman/mason-lspconfig.nvim",
-    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "marksman") end,
-  },
-  {
-    "jay-babu/mason-null-ls.nvim",
-    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "prettier") end,
-  },
   {
     "ruifm/gitlinker.nvim",
     lazy = false,
