@@ -35,6 +35,8 @@ return {
       desc = "Home screen",
     },
     ["<leader>h"] = { ":noh", desc = "noh" },
+    ["<leader>\\"] = { "<cmd>vsplit<cr>", desc = "Vertical Split" },
+    ["<leader>-"] = { "<cmd>split<cr>", desc = "Horizontal Split" },
   },
   i = {
     ["<leader>,"] = {
