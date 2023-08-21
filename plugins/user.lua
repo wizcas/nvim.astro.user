@@ -17,6 +17,24 @@ return {
     name = "catppuccin",
     priority = 1000,
   },
+  {
+    "sainnhe/edge",
+    name = "edge",
+    priority = 1000,
+    config = function()
+      vim.g.edge_style = "neon"
+      vim.g.edge_better_performance = 1
+    end,
+  },
+  {
+    "sainnhe/sonokai",
+    name = "sonokai",
+    priority = 1000,
+    config = function()
+      vim.g.sonokai_style = "maia"
+      vim.g.sonokai_better_performance = 1
+    end,
+  },
   -- Functional
   {
     "github/copilot.vim",
