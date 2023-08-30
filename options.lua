@@ -50,6 +50,8 @@ return function(local_vim)
       neovide_remember_window_size = true,
       neovide_cursor_vfx_mode = "pixiedust",
       neovide_cursor_vfx_partical_density = 32.0,
+      neovide_theme = "auto",
+      neovide_fullscreen = true,
     }
     for k, v in pairs(neovide_opts) do
       vim.g[k] = v
