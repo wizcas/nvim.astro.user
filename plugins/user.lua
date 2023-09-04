@@ -1,5 +1,3 @@
-local utils = require "astronvim.utils"
-
 return {
   -- THEMES! YAY!
   {
