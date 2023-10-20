@@ -34,9 +34,12 @@ return {
       end,
       desc = "Home screen",
     },
-    ["<leader>h"] = { ":noh", desc = "noh" },
+    ["<leader>h"] = { ":noh<cr>", desc = "noh" },
     ["<leader>\\"] = { "<cmd>vsplit<cr>", desc = "Vertical Split" },
     ["<leader>-"] = { "<cmd>split<cr>", desc = "Horizontal Split" },
+    -- Database
+    ["<leader>so"] = { "<cmd>DBUIToggle<cr>", desc = "Toggle DB UI" },
+    ["<leader>s"] = { name = "Database" },
   },
   i = {
     ["<leader>,"] = {
