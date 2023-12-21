@@ -40,6 +40,12 @@ return {
     -- Database
     ["<leader>so"] = { "<cmd>DBUIToggle<cr>", desc = "Toggle DB UI" },
     ["<leader>s"] = { name = "Database" },
+    -- IronREPL
+    ["<leader>r"] = { name = "IronREPL" },
+    ["<leader>rs"] = { "<cmd>IronRepl<cr>", desc = "Open Iron REPL" },
+    ["<leader>rr"] = { "<cmd>IronRestart<cr>", desc = "Restart Iron REPL" },
+    ["<leader>rf"] = { "<cmd>IronFocus<cr>", desc = "Focus Iron REPL" },
+    ["<leader>rh"] = { "<cmd>IronHide<cr>", desc = "Hide Iron REPL" },
   },
   i = {
     ["<leader>,"] = {
