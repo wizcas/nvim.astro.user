@@ -46,6 +46,7 @@ return {
     ["<leader>rr"] = { "<cmd>IronRestart<cr>", desc = "Restart Iron REPL" },
     ["<leader>rf"] = { "<cmd>IronFocus<cr>", desc = "Focus Iron REPL" },
     ["<leader>rh"] = { "<cmd>IronHide<cr>", desc = "Hide Iron REPL" },
+    ["<leader>rp"] = { "<cmd>normal 1 rcih<cr>/^# %%<cr>", desc = "Send Python cell go to next" },
   },
   i = {
     ["<leader>,"] = {
