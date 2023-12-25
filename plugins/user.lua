@@ -112,7 +112,7 @@ return {
           cr = "<leader>r<cr>",
           interrupt = "<leader>r<space>",
           exit = "<leader>rq",
-          clear = "<leader>cl",
+          clear = "<leader>rd",
         },
         -- If the highlight is on, you can change how it looks
         -- For the available options, check nvim_set_hl
