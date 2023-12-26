@@ -65,6 +65,8 @@ return {
       vim.g.db_ui_use_nerd_fonts = 1
     end,
   },
+
+  -- Language support
   {
     "goerz/jupytext.vim",
     lazy = false,
@@ -129,4 +131,5 @@ return {
     lazy = false,
     autoStart = true,
   },
+  { "Hoffs/omnisharp-extended-lsp.nvim" },
 }
