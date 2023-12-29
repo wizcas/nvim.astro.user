@@ -22,6 +22,14 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    -- LSPs
+    ["<leader>lz"] = {
+      function()
+        vim.lsp.codelens.clear()
+        if vim.g.codelens_enabled then vim.lsp.codelens.refresh() end
+      end,
+      desc = "Reload CodeLens",
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>a"] = {
