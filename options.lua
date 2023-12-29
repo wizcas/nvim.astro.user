@@ -71,6 +71,7 @@ return function(local_vim)
     local_vim.opt.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
     local_vim.opt.shellquote = ""
     local_vim.opt.shellxquote = ""
+    local_vim.g.noshellslash = true
   end
 
   return local_vim
