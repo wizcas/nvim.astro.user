@@ -74,6 +74,9 @@ return {
       replace_keycodes = false,
     },
   },
+  v = {
+    p = { '"_dP', desc = "Paste without yanking" },
+  },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
